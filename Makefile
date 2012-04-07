@@ -34,6 +34,6 @@ install:
 	install -D -m 0644 BGM/* -t $(DESTDIR)/usr/share/$(PROG)/BGM
 	install -D -m 0644 res/* -t $(DESTDIR)/usr/share/$(PROG)/res
 	install -D -m 0644 SE/* -t $(DESTDIR)/usr/share/$(PROG)/SE
-	install -D -m 0644 icon.ico -t $(DESTDIR)/usr/share/$(PROG)
+	install -D -m 0644 icon.ico $(DESTDIR)/usr/share/pixmaps/open-syobon.ico
 	install -D -m 0644 {README,AUTHORS,NEWS} -t $(DESTDIR)/usr/share/doc/$(PROG)
 	install -D -m 0644 open-syobon.desktop $(DESTDIR)/usr/share/applications/open-syobon.desktop
