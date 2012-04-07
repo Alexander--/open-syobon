@@ -37,3 +37,4 @@ install:
 	install -D -m 0644 SE/* -t $(DESTDIR)/usr/share/$(PROG)/SE
 	install -D -m 0644 icon.ico -t $(DESTDIR)/usr/share/$(PROG)
 	install -D -m 0644 README -t $(DESTDIR)/usr/share/doc/$(PROG)
+	install -D -m 0644 open-syobon.desktop $(DESTDIR)/usr/share/applications/open-syobon.desktop
