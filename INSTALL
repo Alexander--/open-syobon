@@ -1,0 +1,7 @@
+Libraries used:
+---------------
+SDL: http://www.libsdl.org/download-1.2.php
+SDL_gfx: http://freshmeat.net/projects/sdl_gfx/
+SDL_image: http://www.libsdl.org/projects/SDL_image/
+SDL_mixer: http://www.libsdl.org/projects/SDL_mixer/
+SDL_ttf: http://www.libsdl.org/projects/SDL_ttf/

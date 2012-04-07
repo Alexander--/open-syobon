@@ -1,0 +1,2 @@
+Mathew Velasquez (0.8-RC2) initial port to Linux (?) and UTF-8, gamepad support, lots of fixes and optimisations
+David Gerber (RC2-1.0.1) <dg@zapek.com> improvement of the SDL port, fixing Windows build

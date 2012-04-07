@@ -1,0 +1,27 @@
+Open Syobon Action
+=============
+This is an improved version of the SDL version of Syobon Action (also
+known as Cat Mario or Neko Mario). The original website is at:
+http://www.geocities.jp/z_gundam_tanosii/home/Main.html (if you
+understand japanese).
+
+Initial cross-platform port Sourceforge page: http://sourceforge.net/projects/opensyobon/.
+
+Currently development occurs on Github (see https://github.com/Alexander--/open-syobon).
+
+Control and keys:
+-----------------
+The game plays either with the keyboard or a joystick.
+
+Z, Up, Semicolon, Button 1 (Joystick*) - Jump
+Left, Right - Movement
+Down = Enter warp pipe
+F1 = main menu (press during play)
+K = suicide (kill)
+space = speed mode
+1-9 durning main menu = stage select
+0 during main menu = randomized level
+
+Command Line Parameters:
+-----------------
+-window		run the game in a window instead of fullscreen
