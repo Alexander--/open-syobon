@@ -26,3 +26,14 @@ clean:
 
 distclean: clean
 	rm -f $(PROG) *~
+
+install:
+	install -D $(PROG) $(DESTDIR)/usr/bin/$(PROG)
+	install -dm 0755 $(DESTDIR)/usr/share/$(PROG)/BGM
+	install -dm 0755 $(DESTDIR)/usr/share/$(PROG)/res
+	install -dm 0755 $(DESTDIR)/usr/share/$(PROG)/SE
+	install -D -m 0644 BGM/* -t $(DESTDIR)/usr/share/$(PROG)/BGM
+	install -D -m 0644 res/* -t $(DESTDIR)/usr/share/$(PROG)/res
+	install -D -m 0644 SE/* -t $(DESTDIR)/usr/share/$(PROG)/SE
+	install -D -m 0644 icon.ico -t $(DESTDIR)/usr/share/$(PROG)
+	install -D -m 0644 README -t $(DESTDIR)/usr/share/doc/$(PROG)
