@@ -12,6 +12,8 @@ CXXFLAGS += $(shell pkg-config sdl --cflags)
 CXXFLAGS += -D_FONTCONFIG -I/usr/include/fontconfig
 LIBS := $(shell pkg-config sdl --libs) -lSDL_mixer -lSDL_ttf -lSDL_image -lSDL_gfx -lfontconfig
 
+LOCALEDIR := /usr/share/locale
+PACKAGE := open-syobon
 
 all: $(PROG)
 
