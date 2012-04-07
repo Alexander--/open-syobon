@@ -192,12 +192,34 @@ int DxLib_Init(int windowmode)
 byte fontsize = 0;
 TTF_Font *font[FONT_MAX];
 
+#ifdef _FONTCONFIG
+#include "fontconfig.h"
+#endif
+
 //Strings
 void SetFontSize(byte size)
 {
     fontsize = size;
     if (font[size] == NULL) {
-	font[size] = TTF_OpenFont(GAMEDATA"/res/DejaVuSans.ttf"/*"res/sazanami-gothic.ttf"*/, size);
+#ifdef _FONTCONFIG
+	FcPattern *pat, *match;
+	FcResult result;
+	char* file;
+
+	pat = FcPatternCreate();
+	FcPatternAddString(pat, FC_FAMILY, (unsigned char*)"Sazanami Gothic");
+	FcConfigSubstitute(NULL, pat, FcMatchPattern);
+	FcDefaultSubstitute(pat);
+	match = FcFontMatch(NULL, pat, &result);
+
+	FcPatternGetString(match, FC_FILE, 0, (FcChar8 **) &file);
+	font[size] = TTF_OpenFont(file, size);
+
+	FcPatternDestroy(match);
+	FcPatternDestroy(pat);
+#else
+	font[size] = TTF_OpenFont(GAMEDATA"/res/sazanami-gothic.ttf", size);
+#endif
 	if (font[size] == NULL) {
 	    printf("Unable to load font: %s\n", TTF_GetError());
 	    exit(1);

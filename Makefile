@@ -9,7 +9,8 @@ SRCS := DxLib.cpp loadg.cpp main.cpp
 OBJS := $(SRCS:%.cpp=%.o)
 
 CXXFLAGS += $(shell pkg-config sdl --cflags)
-LIBS := $(shell pkg-config sdl --libs) -lSDL_mixer -lSDL_ttf -lSDL_image -lSDL_gfx
+CXXFLAGS += -D_FONTCONFIG -I/usr/include/fontconfig
+LIBS := $(shell pkg-config sdl --libs) -lSDL_mixer -lSDL_ttf -lSDL_image -lSDL_gfx -lfontconfig
 
 
 all: $(PROG)
