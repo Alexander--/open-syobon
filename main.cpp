@@ -10,10 +10,10 @@
 //Changed to ansi c++ main()
 int main(int argc, char *argv[])
 {
-	setlocale (LC_ALL, "");
-	bindtextdomain (PACKAGE, LOCALEDIR);
-	textdomain (PACKAGE);
-
+	/*setlocale (LC_ALL, "");
+	#bindtextdomain (PACKAGE, LOCALEDIR);
+	#textdomain (PACKAGE);
+*/
 	int windowmode = false;
 
 	if (argc > 1)
@@ -10634,7 +10634,7 @@ void ttmsg()
 	    txmsg(_("Well, just passing"), 2);
 	    txmsg(_("I tip the block"), 3);
 	    txmsg(_("Is not it strange never block"), 5);
-	    txmsg(_("                 (Chip)")/*", 6);
+	    txmsg(_("                 (Chip)"), 6);
 	}
 
 	setfont(16, 4);

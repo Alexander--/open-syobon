@@ -1,0 +1,65 @@
+commit abdd33dd555fa1d90523b318e17ccfdea45a0062
+Author: AlexanderR <alexander.r@gmx.com>
+Date:   Sat Apr 7 22:20:24 2012 +1100
+
+    first steps towards gettext support
+
+commit a6d223b239ecad7064aeb0b156a85820bd86f35d
+Author: AlexanderR <alexander.r@gmx.com>
+Date:   Sat Apr 7 14:06:01 2012 +1100
+
+    fix icon path
+
+commit f548a594036630f2cd1414fbe639056ccdbe275d
+Author: AlexanderR <alexander.r@gmx.com>
+Date:   Sat Apr 7 13:43:22 2012 +1100
+
+    separate binary and data
+
+commit 53394d04f957a666c6721e1727a5c652ca4cce8c
+Author: AlexanderR <alexander.r@gmx.com>
+Date:   Sat Apr 7 13:34:31 2012 +1100
+
+    add desktop entry #2
+
+commit 681d51a332fdfc1f04902b5fd52f7346c468c4a8
+Author: AlexanderR <alexander.r@gmx.com>
+Date:   Sat Apr 7 13:34:11 2012 +1100
+
+    add desktop entry
+
+commit d1f3f3928a1c6e3be78b6c93aace3321efd6e8df
+Author: AlexanderR <alexander.r@gmx.com>
+Date:   Sat Apr 7 13:23:51 2012 +1100
+
+    add install target
+
+commit f05fca8ca86ce9a3d5339e0d684b8c5c505aa7ba
+Author: AlexanderR <alexander.r@gmx.com>
+Date:   Sat Apr 7 12:48:54 2012 +1100
+
+    rm crap
+
+commit 79bd59f9aa3f32070da061632a7d0fa3577b9b0c
+Author: AlexanderR <alexander.r@gmx.com>
+Date:   Sat Apr 7 12:45:30 2012 +1100
+
+    added fontconfig support
+
+commit c8a9255fd038954ec31e6b4b120363d88e39157d
+Author: AlexanderR <alexander.r@gmx.com>
+Date:   Sat Apr 7 12:13:01 2012 +1100
+
+    set up file hierachy #2
+
+commit 970d4edfceb57a491b056e07fa066c6f1d5e774e
+Author: AlexanderR <alexander.r@gmx.com>
+Date:   Sat Apr 7 12:10:27 2012 +1100
+
+    set up file hierachy
+
+commit 7c9fe92f9aa2ef76381f3e7bd1fff6c7a1d96208
+Author: AlexanderR <alexander.r@gmx.com>
+Date:   Sat Apr 7 11:44:42 2012 +1100
+
+    first commit

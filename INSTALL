@@ -1,7 +1,40 @@
-Libraries used:
----------------
+Copyright (C) 1994-1996, 1999-2002, 2004-2011 Free Software Foundation,
+Inc.
+Copyright (C) 2012 Alexander R. <alexander r at gmx com>
+
+   Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without warranty of any kind.
+
+Dependencies
+==================
+Game depends on following libraries:
+
 SDL: http://www.libsdl.org/download-1.2.php
 SDL_gfx: http://freshmeat.net/projects/sdl_gfx/
 SDL_image: http://www.libsdl.org/projects/SDL_image/
 SDL_mixer: http://www.libsdl.org/projects/SDL_mixer/
 SDL_ttf: http://www.libsdl.org/projects/SDL_ttf/
+
+These libraries are optional:
+
+Fontconfig: http://www.fontconfig.org/release/
+
+Basic Installation
+==================
+
+`cd' to the directory containing the package's source code and run:
+
+$ ./configure --prefix=/usr
+$ make
+# make install
+
+This will install game binary as /usr/bin/syobon and game data files under
+/usr/share/open-syobon. If you have libfontconfig installed game will search
+for sazanamy-gothic.ttf in default system font path; you can override this
+behaviour to use builtin font, you also can install icon and desktop entry
+files (see output of `configure --help' for instructions).
+
+To remove game run:
+# make uninstall

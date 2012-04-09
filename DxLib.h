@@ -2,6 +2,8 @@
 //Syobon Action uses it. Minor functions are just replaced with SDL
 //counterparts.
 
+#include "config.h"
+
 #define USE_FMOD 0 /* XXX: works better in SDL. fmod doesn't seem to mix several sounds */
 
 #include <SDL.h>

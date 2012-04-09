@@ -1,0 +1,328 @@
+# Japaness translations for open-syobon package
+# Copyright (C) 2012 Alexander R.
+# This file is distributed under the same license as the open-syobon package.
+#  <alexander.r@gmx.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-07 17:29+1100\n"
+"PO-Revision-Date: 2012-04-07 17:58+1100\n"
+"Last-Translator:  <alexander.r@gmx.com>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Clear Play"
+msgstr "ゲームクリアー"
+
+msgid "Thanks for playing"
+msgstr "プレイしてくれてありがとー"
+
+msgid "You're good!"
+msgstr "お、おいしい!!"
+
+msgid "No effect"
+msgstr "毒は無いが……"
+
+msgid "Stuck!"
+msgstr "刺さった!!"
+
+msgid "Poison!"
+msgstr "食べるべきではなかった!!"
+
+msgid "I'm burning!"
+msgstr "俺は燃える男だ!!"
+
+msgid "I'm burning!..."
+msgstr "体が……焼ける……"
+
+msgid "Bleh!"
+msgstr "たーまやー!!"
+
+msgid "Blah!"
+msgstr "見事にオワタ"
+
+msgid "Legs, get feet!"
+msgstr "足が、足がぁ!!"
+
+msgid "800°C!"
+msgstr "流石は摂氏800度!!"
+
+msgid "I hate lava.."
+msgstr "溶岩と合体したい……"
+
+msgid "Banzai!"
+msgstr "ヤッフー!!"
+
+msgid "I win!"
+msgstr "え?俺勝っちゃったの?"
+
+msgid "Die!"
+msgstr "貴様の死に場所はここだ!"
+
+msgid "Bye bye!"
+msgstr "二度と会う事もないだろう"
+
+msgid "I'm the strongest!"
+msgstr "俺、最強!!"
+
+msgid "Too bad!"
+msgstr "一昨日来やがれ!!"
+
+msgid "Try again!"
+msgstr "漢に後退の二文字は無い!!"
+
+msgid "Hahaha!"
+msgstr "ハッハァ!!"
+
+msgid "Don't forget me!"
+msgstr "身の程知らずが……"
+
+msgid "Caught!"
+msgstr "油断が死を招く"
+
+msgid "Woohoo!"
+msgstr "おめでたい奴だ"
+
+msgid "Wasted!"
+msgstr "屑が!!"
+
+msgid "Reckless.."
+msgstr "無謀な……"
+
+msgid "Woot!"
+msgstr "ヤッフー!!"
+
+msgid "I'm the winner!"
+msgstr "え?俺勝っちゃったの?"
+
+msgid "See you!"
+msgstr "二度と会う事もないだろう"
+
+msgid "Har!"
+msgstr "身の程知らずが……"
+
+msgid "You lose!"
+msgstr "僕は……負けない!!"
+
+msgid "You're too weak!"
+msgstr "貴様に見切れる筋は無い"
+
+msgid "Die in a painful death!"
+msgstr "今死ね、すぐ死ね、骨まで砕けろ!!"
+
+msgid "Mission complete!"
+msgstr "任務完了!!"
+
+msgid "Did I win?"
+msgstr "え?俺勝っちゃったの?"
+
+msgid "This is your place to die!"
+msgstr "貴様の死に場所はここだ!"
+
+msgid "Watch me!"
+msgstr "身の程知らずが……"
+
+msgid "Fatality!"
+msgstr "油断が死を招く"
+
+msgid "Be happy!"
+msgstr "おめでたい奴だ"
+
+msgid "Scraps!"
+msgstr "屑が!!"
+
+msgid "I'm invincible!"
+msgstr "鉄壁!!よって、無敵!!"
+
+msgid "I'm not even armed!"
+msgstr "丸腰で勝てるとでも?"
+
+msgid "Booh!"
+msgstr "パリイ!!"
+
+msgid "Caught!..."
+msgstr "自業自得だ"
+
+msgid "Poing!"
+msgstr "ク、クマー"
+
+msgid "Eaten!"
+msgstr "食べるべきではなかった!!"
+
+msgid "Oh yeah!"
+msgstr "うめぇ!!"
+
+msgid "Woops?"
+msgstr "ブロックを侮ったな?"
+
+msgid "Shaking!"
+msgstr "シャキーン"
+
+msgid "Wave the gun!"
+msgstr "波動砲!!"
+
+msgid "Do you think she cheated?"
+msgstr "裏切られたとでも思ったか?"
+
+msgid "Yabadabadoo!"
+msgstr "ポールアターック!!"
+
+msgid "People involved in production"
+msgstr "制作・プレイに関わった方々"
+
+msgid "Stage 1 design"
+msgstr "ステージ１　プレイ"
+
+msgid "Stage 2 design"
+msgstr "ステージ２　プレイ"
+
+msgid "My friend willowlet"
+msgstr "友人　willowlet "
+
+msgid "Stage 3 design"
+msgstr "ステージ３　プレイ"
+
+msgid "Stage 4 design"
+msgstr "ステージ４　プレイ"
+
+msgid "My friend ann"
+msgstr "友人２　ann "
+
+msgid "Cooperation"
+msgstr "ご協力"
+
+msgid "Senior T"
+msgstr "Ｔ先輩"
+
+msgid "Senior S"
+msgstr "Ｓ先輩"
+
+msgid "Video technology"
+msgstr "動画技術提供"
+
+msgid "Senior K"
+msgstr "Ｋ先輩"
+
+msgid "Video capture encoding and editing"
+msgstr "動画キャプチャ・編集・エンコード"
+
+msgid "Graphics program"
+msgstr "プログラム・描画・ネタ・動画編集"
+
+msgid "Chikuwa"
+msgstr "ちく"
+
+msgid "Thank you for playing!"
+msgstr "プレイしていただき　ありがとうございました〜"
+
+msgid "Press Enter or Jump to start"
+msgstr "Enterキーを押せ!!"
+
+msgid "Test   hoge"
+msgstr "テスト　hoge"
+
+msgid "Stage 1"
+msgstr "ステージ 1 より"
+
+msgid "Nothing special, just"
+msgstr "特殊的なものが増えたので"
+
+msgid "take good care of me."
+msgstr "気をつけてくれよ〜"
+
+msgid "You might want to use some items."
+msgstr "後、アイテムの一部を利用するかも…"
+
+msgid "                   -Chikuwa"
+msgstr "                       ちく より"
+
+msgid "[?] required :)"
+msgstr "            ？が必要です "
+
+msgid "          (^Д^) - m9"
+msgstr "                         m9(^Д^)"
+
+msgid "Money money, dirty money.."
+msgstr "   別にコインに意味ないけどね "
+
+msgid "                             (・ω・) -Noshi"
+msgstr "                      (・ω・ )ﾉｼ"
+
+msgid "The first block is hidden"
+msgstr "この先に隠しブロックがあります "
+
+msgid "Take note!"
+msgstr "注意してください !!"
+
+msgid "I lovered the difficulty from the"
+msgstr " 前回よりも難易度を下げましたので"
+
+msgid "previous one. Take it easy."
+msgstr " 気楽にプレイしてください    "
+
+msgid "                                    -Chikuwa"
+msgstr "                       ちく より"
+
+msgid "The enemy nearby jumps along"
+msgstr " そこにいる敵のそばによると、      "
+
+msgid "with you."
+msgstr " 自分と一緒にジャンプしてくれます。"
+
+msgid "It's cute, and maybe useful.."
+msgstr "   可愛いですね。                  "
+
+msgid "I should bring an enemy"
+msgstr " あの敵は連れて来れましたか?、     "
+
+msgid "here so that it could"
+msgstr " 連れて来れなかった貴方は、        "
+
+msgid "help me crush the wall."
+msgstr " そこの落とし穴から Let's dive!    "
+
+msgid "So easy. Not something to"
+msgstr "そんな容易に"
+
+msgid "rely on tips. Here, the"
+msgstr "ヒントに頼るもんじゃないぜ"
+
+msgid "following is going quickly!"
+msgstr "ほら、さっさと次行きな!!"
+
+msgid "The Genuine Final Stage"
+msgstr " 正真正銘のファイナルステージ。    "
+
+msgid "If this is really the ending,"
+msgstr " クリアすれば遂にエンディング!!    "
+
+msgid "should I come back from the pipes?"
+msgstr " その土管から戻ってもいいんだぜ?   "
+
+msgid "The floor is frozen and"
+msgstr " 床が凍ってるから、すっごい滑るよ。"
+
+msgid "really slippery."
+msgstr " 　                      "
+
+msgid "What? Me?"
+msgstr "え？私ですか？ "
+
+msgid "Well, just passing"
+msgstr "いやぁ、ただの通りすがりの"
+
+msgid "I tip the block"
+msgstr "ヒントブロックですよ〜"
+
+msgid "Is not it strange never block"
+msgstr "決して怪しいブロックじゃないですよ"
+
+msgid "                 (Chip)"
+msgstr "                          (…チッ)"

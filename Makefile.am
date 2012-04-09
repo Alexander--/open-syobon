@@ -1,0 +1,14 @@
+ACLOCAL_AMFLAGS = -I m4
+
+bin_PROGRAMS = syobon
+syobon_SOURCES = main.cpp DxLib.cpp loadg.cpp
+
+if PLATF_WINDOWS
+GAMEDATA=.
+else
+GAMEDATA=$(datadir)/$(PACKAGE)
+endif
+
+AM_CPPFLAGS = -DGAMEDATA=\"$(GAMEDATA)\"
+AM_CXXFLAGS = $(SDL_CFLAGS)
+LDADD = $(FONTCONFIG_FLAGS) $(SDL_LIBS)

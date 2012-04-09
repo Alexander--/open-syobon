@@ -192,16 +192,12 @@ int DxLib_Init(int windowmode)
 byte fontsize = 0;
 TTF_Font *font[FONT_MAX];
 
-#ifdef _FONTCONFIG
-#include "fontconfig.h"
-#endif
-
 //Strings
 void SetFontSize(byte size)
 {
     fontsize = size;
     if (font[size] == NULL) {
-#ifdef _FONTCONFIG
+#ifdef USE_FONTCONFIG
 	FcPattern *pat, *match;
 	FcResult result;
 	char* file;

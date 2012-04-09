@@ -1,12 +1,20 @@
+Copyright (C) 2012 Alexander R. <alexander r at gmx com>
+
+   Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without warranty of any kind.
+
 Open Syobon Action
 =============
 This is an improved SDL version of Syobon Action (also known as Cat Mario or Neko Mario).
+
 The original website is at: http://www.geocities.jp/z_gundam_tanosii/home/Main.html (if you
-understand japanese).
+understand Japanese).
 
-Initial cross-platform port Sourceforge page: http://sourceforge.net/projects/opensyobon/.
+Sourceforge page of initial port: http://sourceforge.net/projects/opensyobon.
 
-Currently development occurs on Github (see https://github.com/Alexander--/open-syobon).
+Currently development page on Github: https://github.com/Alexander--/open-syobon.
 
 Control and keys:
 -----------------
@@ -23,4 +31,13 @@ space = speed mode
 
 Command Line Parameters:
 -----------------
--window		run the game in a window instead of fullscreen
+-window run the game in a window instead of fullscreen
+
+Compilation
+-----------------
+See INSTALL file in the root directory of tarball.
+
+License
+-----------------
+Original file with permissive WTFPL-like license is attached. All changes and
+modifications are licensed under GNU GPL 3 or later at your option.
