@@ -1,14 +1,21 @@
 ACLOCAL_AMFLAGS = -I m4
 
+AM_CPPFLAGS = -DGAMEDATA=\"$(pkgdatadir)\"
+AM_CXXFLAGS = $(SDL_CFLAGS)
+LDADD = $(SDL_LIBS)
+
 bin_PROGRAMS = syobon
 syobon_SOURCES = main.cpp DxLib.cpp loadg.cpp
+nobase_pkgdata_DATA = $(PACKAGE).png BGM/* SE/* res/*.PNG
 
-if PLATF_WINDOWS
-GAMEDATA=.
-else
-GAMEDATA=$(datadir)/$(PACKAGE)
+if USE_FONTCONFIG
+nobase_pkgdata_DATA += res/sazanami-gothic.ttf
+LDADD += -lfontconfig
 endif
 
-AM_CPPFLAGS = -DGAMEDATA=\"$(GAMEDATA)\"
-AM_CXXFLAGS = $(SDL_CFLAGS)
-LDADD = $(FONTCONFIG_FLAGS) $(SDL_LIBS)
+if DESKTOP
+pixmapdir = $(datarootdir)/pixmaps
+pixmap_DATA = $(PACKAGE).png
+entrydir = $(datarootdir)/applications
+entry_DATA = $(PACKAGE).desktop
+endif

@@ -32,14 +32,22 @@ SDL_Surface *scale_screen;
 bool keysHeld[SDLK_LAST];
 int DxLib_Init(int windowmode)
 {
-    setlocale(LC_CTYPE, "en_ca.UTF-8");
-
-	//SDL_putenv("SDL_VIDEODRIVER=directx"); /* XXX */
+    /*setlocale (LC_ALL, "");
+        #bindtextdomain (PACKAGE, LOCALEDIR);
+        #textdomain (PACKAGE);
+*/
 
     if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
 	printf("Unable to init SDL: %s\n", SDL_GetError());
 	return -1;
     }
+
+	SDL_Surface *icon = IMG_Load(GAMEDATA"/"PACKAGE".png");
+        if (icon) {
+                SDL_WM_SetIcon(icon, NULL);
+                SDL_FreeSurface(icon);
+        }
+
 
 	int flags = SDL_HWSURFACE | SDL_DOUBLEBUF;
 
@@ -141,20 +149,20 @@ int DxLib_Init(int windowmode)
 		}
 	}
 
-    //SDL_WM_SetCaption("Syobon Action (しょぼんのアクション)", NULL);
+	//SDL_WM_SetCaption("Syobon Action (しょぼんのアクション)", NULL);
 	SDL_WM_SetCaption("Syobon Action", NULL);
-    SDL_ShowCursor(SDL_DISABLE);
+	SDL_ShowCursor(SDL_DISABLE);
 
-    //Initialize font
-    if (TTF_Init() == -1) {
-	printf("Unable to init SDL_ttf: %s\n", TTF_GetError());
-	return -1;
-    }
+	//Initialize font
+	if (TTF_Init() == -1) {
+		printf("Unable to init SDL_ttf: %s\n", TTF_GetError());
+		return -1;
+	}
 
-    if (font == NULL) {
-	printf("Unable to load font: %s\n", TTF_GetError());
-	return -1;
-    }
+	if (font == NULL) {
+		printf("Unable to load font: %s\n", TTF_GetError());
+		return -1;
+	}
 #if USE_FMOD
 	if (FMOD_System_Create(&fmod_system) != FMOD_OK)
 	{

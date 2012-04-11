@@ -10,10 +10,6 @@
 //Changed to ansi c++ main()
 int main(int argc, char *argv[])
 {
-	/*setlocale (LC_ALL, "");
-	#bindtextdomain (PACKAGE, LOCALEDIR);
-	#textdomain (PACKAGE);
-*/
 	int windowmode = false;
 
 	if (argc > 1)

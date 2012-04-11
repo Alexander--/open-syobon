@@ -18,6 +18,8 @@ AC_PROG_CC
 AC_PROG_INSTALL
 
 # Check for Windows
+# This replaces following (impossible) feature checks:
+# 1) fontconfig is almost useless
 MINGW_AC_WIN32_NATIVE_HOST
 
 # Check for packages
@@ -41,14 +43,17 @@ AC_CHECK_LIB([SDL_ttf], [TTF_Quit], [], [
 
 # Optionally check for fontconfig
 AC_ARG_WITH([fontconfig],
-    AS_HELP_STRING([--without-fontconfig], [Ignore presence of fontconfig and disable it]))
+    AS_HELP_STRING([--without-fontconfig], [ignore presence of fontconfig and disable it]))
 
-AS_IF([test "x$with_fontconfig" != "xno"],
-      [AC_CHECK_LIB([fontconfig], [FcPatternCreate], [have_fontconfig=yes], [have_fontconfig=no])],
-      [have_fontconfig=no])
+AS_IF([test "x$with_fontconfig" = "xyes"],
+      [have_fontconfig=yes],
+      [test "x$with_fontconfig" = "xno"],
+      [have_fontconfig=no],
+      [AS_IF([test "x$mingw_cv_win32_host" = "xyes"],
+             [have_fontconfig=no],
+             [AC_CHECK_LIB([fontconfig], [FcPatternCreate], [have_fontconfig=yes], [have_fontconfig=no])])])
 
 AS_IF([test "x$have_fontconfig" = "xyes"], [
-            FONTCONFIG_FLAGS="$LDADD -lfontconfig"
             AC_DEFINE([USE_FONTCONFIG], [1], [Define if using fontconfig.])
             AH_TOP([#include "fontconfig/fontconfig.h"])
             ],
@@ -56,6 +61,7 @@ AS_IF([test "x$have_fontconfig" = "xyes"], [
              [AC_MSG_ERROR([unable to find libfontconfig! Install it or build without --with-fontconfig option])
       ])
 ])
+AM_CONDITIONAL([USE_FONTCONFIG], [test "x$have_fontconfig" = "xyes"])
 
 # Checks for header files.
 AC_CHECK_HEADERS([libintl.h locale.h])
@@ -66,10 +72,10 @@ AC_HEADER_STDBOOL
 # Checks for library functions.
 AC_CHECK_FUNCS([setlocale])
 
-# Checks for data placement location
-AM_CONDITIONAL([PLATF_WINDOWS], [test "x$mingw_cv_win32_host" = "xyes"])
-
-AC_SUBST([FONTCONFIG_FLAGS])
+# Desktop entry support
+AC_ARG_WITH([desktop],
+    AS_HELP_STRING([--with-desktop], [install desktop entry file and icon]))
+AM_CONDITIONAL([DESKTOP], [test "x$with_desktop" = "xyes"])
 
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
